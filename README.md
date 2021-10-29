@@ -1,3 +1,3 @@
 basic-statistics-on-input-data
 
-take-home kata done in java
+take-home kata done in java.
