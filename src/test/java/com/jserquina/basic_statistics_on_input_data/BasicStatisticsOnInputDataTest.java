@@ -57,47 +57,74 @@ public class BasicStatisticsOnInputDataTest {
 
     @Test
     public void testGetValidatedNumbers() {
+        System.out.println("* testGetValidatedNumbers()");
+        System.out.println("Expected: " + testedValidatedNumbersArray);
+        System.out.println("Actual: " + validatedNumbersArray);
         assertNotNull(testedValidatedNumbersArray);
         assertEquals(validatedNumbersArray, testedValidatedNumbersArray);
     }
 
     @Test
     public void testShowNumbersMethod() {
+        System.out.println("* testShowNumbersMethod()");
+        System.out.println("Expected: " + outputNumbersString);
+        System.out.println("Actual: " + BasicStatisticsOnInputData.formatInputNumbers(testedValidatedNumbersArray));
         assertEquals(outputNumbersString, BasicStatisticsOnInputData.formatInputNumbers(testedValidatedNumbersArray));
     }
 
     @Test
     public void testGetNumbersCountOutput() {
+        System.out.println("* testGetNumbersCountOutput()");
+        System.out.println("Expected: " + getNumbersCountOutputInt);
+        System.out.println("Actual: " + BasicStatisticsOnInputData.getNumbersCount(testedValidatedNumbersArray));
         assertEquals(getNumbersCountOutputInt, BasicStatisticsOnInputData.getNumbersCount(testedValidatedNumbersArray));
     }
 
     @Test
     public void testGetNumbersSumOutput() {
+        System.out.println("* testGetNumbersSumOutput()");
+        System.out.println("Expected: " + getNumbersSumOutputInt);
+        System.out.println("Actual: " + BasicStatisticsOnInputData.getNumbersSum(testedValidatedNumbersArray));
         assertEquals(getNumbersSumOutputInt, BasicStatisticsOnInputData.getNumbersSum(testedValidatedNumbersArray));
     }
 
     @Test
     public void testGetNumbersMinimumOutput() {
+        System.out.println("* testGetNumbersMinimumOutput()");
+        System.out.println("Expected: " + getNumbersMinimumOutputInt);
+        System.out.println("Actual: " + BasicStatisticsOnInputData.getNumbersMinimum(testedValidatedNumbersArray));
         assertEquals(getNumbersMinimumOutputInt, BasicStatisticsOnInputData.getNumbersMinimum(testedValidatedNumbersArray));
     }
 
     @Test
     public void testGetNumbersMaximumOutput() {
+        System.out.println("* testGetNumbersMaximumOutput()");
+        System.out.println("Expected: " + getNumbersMaximumOutputInt);
+        System.out.println("Actual: " + BasicStatisticsOnInputData.getNumbersMaximum(testedValidatedNumbersArray));
         assertEquals(getNumbersMaximumOutputInt, BasicStatisticsOnInputData.getNumbersMaximum(testedValidatedNumbersArray));
     }
 
     @Test
     public void testGetNumbersMeanOutput() {
+        System.out.println("* testGetNumbersMeanOutput()");
+        System.out.println("Expected: " + getNumbersMeanOutputInt);
+        System.out.println("Actual: " + BasicStatisticsOnInputData.getNumbersMean(testedValidatedNumbersArray));
         assertEquals(getNumbersMeanOutputInt, BasicStatisticsOnInputData.getNumbersMean(testedValidatedNumbersArray));
     }
 
     @Test
     public void testGetNumbersMedianOutput() {
+        System.out.println("* testGetNumbersMedianOutput()");
+        System.out.println("Expected: " + getNumbersMedianOutputInt);
+        System.out.println("Actual: " + BasicStatisticsOnInputData.getNumbersMedian(testedValidatedNumbersArray));
         assertEquals(getNumbersMedianOutputInt, BasicStatisticsOnInputData.getNumbersMedian(testedValidatedNumbersArray));
     }
 
     @Test
     public void testGetNumbersErrorsOutput() {
+        System.out.println("* testGetNumbersErrorsOutput()");
+        System.out.println("Expected: " + getNumbersErrorOutputInt);
+        System.out.println("Actual: " + BasicStatisticsOnInputData.getNumbersErrors(testNumbersArray));
         assertEquals(getNumbersErrorOutputInt, BasicStatisticsOnInputData.getNumbersErrors(testNumbersArray));
     }
 }
